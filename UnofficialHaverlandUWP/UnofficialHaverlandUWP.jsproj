@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>ec217198-add7-4e08-bc4d-7e364edaeaf5</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0'">
+    <VisualStudioVersion>15.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>UnofficialHaverlandUWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="UnofficialHaverlandUWP_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\LockScreenLogo.scale-100.png" />
+    <Content Include="images\LockScreenLogo.scale-125.png" />
+    <Content Include="images\LockScreenLogo.scale-150.png" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\LockScreenLogo.scale-400.png" />
+    <Content Include="images\SplashScreen.scale-100.png" />
+    <Content Include="images\SplashScreen.scale-125.png" />
+    <Content Include="images\SplashScreen.scale-150.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\SplashScreen.scale-400.png" />
+    <Content Include="images\Square150x150Logo.scale-100.png" />
+    <Content Include="images\Square150x150Logo.scale-125.png" />
+    <Content Include="images\Square150x150Logo.scale-150.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-400.png" />
+    <Content Include="images\Square310x310Logo.scale-100.png" />
+    <Content Include="images\Square310x310Logo.scale-125.png" />
+    <Content Include="images\Square310x310Logo.scale-150.png" />
+    <Content Include="images\Square310x310Logo.scale-200.png" />
+    <Content Include="images\Square310x310Logo.scale-400.png" />
+    <Content Include="images\Square44x44Logo.scale-100.png" />
+    <Content Include="images\Square44x44Logo.scale-125.png" />
+    <Content Include="images\Square44x44Logo.scale-150.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-400.png" />
+    <Content Include="images\Square44x44Logo.targetsize-16.png" />
+    <Content Include="images\Square44x44Logo.targetsize-16_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-20.png" />
+    <Content Include="images\Square44x44Logo.targetsize-20_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-256.png" />
+    <Content Include="images\Square44x44Logo.targetsize-256_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-30.png" />
+    <Content Include="images\Square44x44Logo.targetsize-30_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-32.png" />
+    <Content Include="images\Square44x44Logo.targetsize-32_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-36.png" />
+    <Content Include="images\Square44x44Logo.targetsize-36_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-40.png" />
+    <Content Include="images\Square44x44Logo.targetsize-40_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-48.png" />
+    <Content Include="images\Square44x44Logo.targetsize-48_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-60.png" />
+    <Content Include="images\Square44x44Logo.targetsize-60_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-64.png" />
+    <Content Include="images\Square44x44Logo.targetsize-64_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-72.png" />
+    <Content Include="images\Square44x44Logo.targetsize-72_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-80.png" />
+    <Content Include="images\Square44x44Logo.targetsize-80_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-96.png" />
+    <Content Include="images\Square44x44Logo.targetsize-96_altform-unplated.png" />
+    <Content Include="images\Square71x71Logo.scale-100.png" />
+    <Content Include="images\Square71x71Logo.scale-125.png" />
+    <Content Include="images\Square71x71Logo.scale-150.png" />
+    <Content Include="images\Square71x71Logo.scale-200.png" />
+    <Content Include="images\Square71x71Logo.scale-400.png" />
+    <Content Include="images\StoreLogo.scale-100.png" />
+    <Content Include="images\StoreLogo.scale-125.png" />
+    <Content Include="images\StoreLogo.scale-150.png" />
+    <Content Include="images\StoreLogo.scale-200.png" />
+    <Content Include="images\StoreLogo.scale-400.png" />
+    <Content Include="images\Wide310x150Logo.scale-100.png" />
+    <Content Include="images\Wide310x150Logo.scale-125.png" />
+    <Content Include="images\Wide310x150Logo.scale-150.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="images\Wide310x150Logo.scale-400.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
